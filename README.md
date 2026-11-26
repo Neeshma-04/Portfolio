@@ -2,7 +2,7 @@
 
 This is my personal portfolio: the marketing portfolio of **Neeshma Mehta**, a product marketer based in Raleigh, North Carolina.
 
-**Live site:** https://neeshma-04.github.io/Portfolio/ (once GitHub Pages is turned on, see below)
+**Live site:** https://neeshmamehta.com (once Cloudflare Pages is connected, see below)
 
 ## About me
 
@@ -41,17 +41,18 @@ Plain HTML, CSS and a little JavaScript in a single `index.html`, with no build 
 
 Open `index.html` in a browser. To test the resume download the way a web server serves it, run `python3 -m http.server` in this folder and visit http://localhost:8000.
 
-## Publish with GitHub Pages
+## How it's published
 
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**, pick `main` and `/ (root)`, and save.
-3. After a minute or two the site is live at https://neeshma-04.github.io/Portfolio/
+The site is hosted on Cloudflare Pages at https://neeshmamehta.com, and Cloudflare redeploys it automatically whenever `main` changes.
 
-To use your own domain, such as neeshmamehta.com, enter it under **Settings → Pages → Custom domain**, add the DNS records from GitHub's custom domain guide wherever you bought the domain, and tick **Enforce HTTPS** once it's available.
+First-time setup:
+1. In Cloudflare, go to **Workers & Pages → Create → Pages → Connect to Git** and pick this repository.
+2. Set the production branch to `main` and the framework preset to None, leave the build command empty, and set the build output directory to `/`.
+3. In the project's **Custom domains** tab, add `neeshmamehta.com` (and `www.neeshmamehta.com` if you want that address too). The domain is already on Cloudflare, so it adds the DNS records for you.
 
 ## Updating the site
 
-- **Text:** edit `index.html` on GitHub (the pencil icon) and commit.
+- **Text:** edit `index.html` on GitHub (the pencil icon) and commit. Changes on `main` go live within a minute or two.
 - **Photo or resume:** upload a new file with exactly the same name to replace the old one.
 
 ## Contact
