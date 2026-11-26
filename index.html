@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Neeshma Mehta is a product marketer in Raleigh, NC, turning complex products into stories people choose: positioning, whitepapers, customer stories and sales enablement.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Neeshma Mehta · Marketing Portfolio">
+<meta property="og:description" content="Neeshma Mehta is a product marketer in Raleigh, NC, turning complex products into stories people choose: positioning, whitepapers, customer stories and sales enablement.">
+<meta property="og:url" content="https://neeshmamehta.com/">
+<meta property="og:image" content="https://neeshmamehta.com/neeshma-mehta.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://neeshmamehta.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23ecd9d2'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23b06a5b'%3EN%3C/text%3E%3C/svg%3E">
+<title>Neeshma Mehta · Marketing Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap">
+<style>
+/* Design C: a polished "marketing portfolio" in black, white and blush, with a fine-line botanical touch.
+   Work is organised by marketing skill, reachable from round icon buttons, and every piece gets a visual
+   preview (a mock cover) with a "view the piece" call to action and objective / process / result notes. */
+:root {
+  --bg: #ffffff;
+  --soft: #f7f2ef;        /* blush-white panels */
+  --blush: #ecd9d2;
+  --ink: #141414;
+  --muted: #6e6965;
+  --line: #e6dfda;
+  --rose: #b06a5b;        /* dusty rose accent */
+  --cover-a: #141414; --cover-b: #ecd9d2; --cover-c: #d9c7b5;
+  --f-head: "Playfair Display", Georgia, serif;
+  --f-body: "Poppins", "Helvetica Neue", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121111; --soft: #1b1918; --blush: #3a2b27; --ink: #f4efec; --muted: #aaa29d; --line: #2e2a28; --rose: #e0a091;
+    --cover-a: #f4efec; --cover-b: #3a2b27; --cover-c: #4a3d33; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121111; --soft: #1b1918; --blush: #3a2b27; --ink: #f4efec; --muted: #aaa29d; --line: #2e2a28; --rose: #e0a091;
+  --cover-a: #f4efec; --cover-b: #3a2b27; --cover-c: #4a3d33; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-weight: 300; font-size: 16px; line-height: 1.7; }
+a { color: inherit; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+[tabindex="-1"]:focus { outline: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: var(--f-head); font-weight: 400; text-wrap: balance; }
+em { font-family: var(--f-head); font-style: italic; color: var(--rose); }
+.wrap { max-width: 1100px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.kicker { font-size: .72rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--rose); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 999px; border: 1px solid var(--ink); text-decoration: none; font-size: .88rem; font-weight: 500; letter-spacing: .04em; background: transparent; color: var(--ink); cursor: pointer; font-family: inherit; transition: background .2s, color .2s; }
+.btn:hover, .btn.solid { background: var(--ink); color: var(--bg); }
+.btn.solid:hover { background: var(--rose); border-color: var(--rose); }
+.sprig { color: var(--rose); }
+
+/* top */
+.top { border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 18px; }
+.top .nm { font-family: var(--f-head); font-size: 1.3rem; text-decoration: none; }
+.top .nm span { color: var(--rose); font-style: italic; }
+
+/* intro */
+.intro { padding-block: 72px 56px; position: relative; overflow: hidden; }
+.intro .wrap { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: center; }
+.portrait { position: relative; width: 100%; max-width: 300px; aspect-ratio: 1; }
+.portrait .ph { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--bg), var(--blush)); border: 1px solid var(--line); display: grid; place-items: center; text-align: center; }
+.portrait .ph b { font-family: var(--f-head); font-weight: 400; font-size: 3.4rem; line-height: 1; }
+.portrait .ph small { display: block; font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
+.portrait img.ph { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block; background: var(--blush); }
+.portrait svg { position: absolute; right: -34px; bottom: -10px; width: 120px; height: auto; }
+.intro h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.02; margin-top: 14px; }
+.intro .role { margin-top: 14px; font-size: 1.1rem; font-weight: 400; }
+.intro .bio { margin-top: 14px; color: var(--muted); max-width: 56ch; }
+.intro .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.intro .facts { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 26px; font-size: .84rem; color: var(--muted); }
+.intro .facts b { color: var(--ink); font-weight: 500; }
+
+/* icon jump nav */
+.jump { background: var(--soft); border-block: 1px solid var(--line); }
+.jump .wrap { padding-block: 34px; }
+.jump p { text-align: center; font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 22px; }
+.jump ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 18px 34px; flex-wrap: wrap; }
+.jump a { display: grid; justify-items: center; gap: 10px; text-decoration: none; font-size: .84rem; font-weight: 500; width: 104px; text-align: center; }
+.jump .ico { width: 76px; height: 76px; border-radius: 50%; background: var(--bg); border: 1px solid var(--line); display: grid; place-items: center; transition: transform .25s, background .25s, color .25s; }
+.jump .ico svg { width: 30px; height: 30px; }
+.jump a:hover .ico { transform: translateY(-4px); background: var(--ink); color: var(--bg); }
+
+/* area sections */
+.area { padding-block: 88px; border-bottom: 1px solid var(--line); scroll-margin-top: 10px; }
+.area:nth-of-type(even) { background: var(--soft); }
+.area-head { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: end; margin-bottom: 48px; }
+.area-head h2 { font-size: clamp(2.1rem, 4.4vw, 3.3rem); line-height: 1.05; margin-top: 10px; }
+.area-head p { color: var(--muted); }
+.pieces { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.piece { display: grid; gap: 16px; align-content: start; min-width: 0; }
+.cover { position: relative; aspect-ratio: 4 / 5; border-radius: 6px; overflow: hidden; display: block; text-decoration: none; box-shadow: 0 1px 0 var(--line), 0 18px 40px -28px rgba(0,0,0,.4); transition: transform .3s; }
+.piece:hover .cover { transform: translateY(-6px) rotate(-.6deg); }
+.cover .inner { position: absolute; inset: 0; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; }
+.cover .type { font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; }
+.cover .ttl { font-family: var(--f-head); font-size: 1.45rem; line-height: 1.12; }
+.cover .brand { font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; opacity: .75; }
+.cover .view { position: absolute; right: 14px; bottom: 14px; font-size: .72rem; font-weight: 500; padding: 7px 12px; border-radius: 999px; background: var(--bg); color: var(--ink); opacity: 0; transform: translateY(6px); transition: .25s; }
+.piece:hover .view, .cover:focus-visible .view { opacity: 1; transform: none; }
+.c-dark { background: var(--cover-a); color: var(--bg); }
+.c-blush { background: var(--cover-b); color: var(--ink); }
+.c-sand { background: var(--cover-c); color: var(--ink); }
+.c-line { background: var(--bg); color: var(--ink); border: 1px solid var(--line); }
+.cover .deco { position: absolute; right: -20px; top: 40px; width: 140px; opacity: .5; }
+.piece h3 { font-size: 1.2rem; line-height: 1.25; }
+.notes { display: grid; gap: 6px; font-size: .88rem; color: var(--muted); }
+.notes b { color: var(--ink); font-weight: 500; }
+.num { display: inline-block; font-family: var(--f-head); font-size: 1.05rem; color: var(--rose); margin-right: 2px; }
+
+/* campaign spotlight (onboarding) */
+.spot { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--bg); margin-bottom: 40px; }
+.spot .l { background: var(--cover-a); color: var(--bg); padding: clamp(28px, 4vw, 48px); display: grid; gap: 16px; align-content: space-between; min-height: 320px; position: relative; overflow: hidden; }
+.spot .l h3 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.08; }
+.spot .l .kicker { color: var(--blush); }
+.spot .l svg { position: absolute; right: -30px; bottom: -20px; width: 200px; opacity: .35; color: var(--blush); }
+.spot .r { padding: clamp(24px, 4vw, 44px); display: grid; gap: 18px; }
+.spot dl { margin: 0; display: grid; grid-template-columns: 110px 1fr; gap: 12px 20px; }
+.spot dt { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--rose); font-weight: 500; padding-top: 4px; }
+.spot dd { margin: 0; font-size: .95rem; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { border-top: 1px solid var(--ink); padding-top: 10px; }
+.stat b { display: block; font-family: var(--f-head); font-weight: 400; font-size: 2rem; line-height: 1; }
+.stat span { font-size: .78rem; color: var(--muted); }
+
+/* analytics chart */
+.chart { display: grid; gap: 14px; max-width: 860px; }
+.bar { display: grid; grid-template-columns: minmax(0, 1.3fr) 2fr 48px; gap: 16px; align-items: center; font-size: .9rem; }
+.bar a { text-decoration: underline; text-decoration-color: var(--line); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.bar a::after { content: "\00a0↗"; color: var(--rose); }
+.bar a:hover { color: var(--rose); text-decoration-color: currentColor; }
+.bar .track { height: 12px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.bar .fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--rose), var(--blush)); width: var(--w); }
+.bar b { font-family: var(--f-head); font-weight: 400; font-size: 1.15rem; text-align: right; font-variant-numeric: tabular-nums; }
+.bignums { display: flex; flex-wrap: wrap; gap: 12px 56px; margin-bottom: 40px; }
+.bignums div b { display: block; font-family: var(--f-head); font-weight: 400; font-size: clamp(2.6rem, 6vw, 4rem); line-height: 1; }
+.bignums div span { font-size: .84rem; color: var(--muted); }
+.library { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--line); max-width: 860px; }
+.library ul { list-style: none; padding: 0; margin: 14px 0 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 28px; }
+.library li a, .allpost { text-decoration: none; font-size: .95rem; }
+.library li a:hover, .allpost:hover { color: var(--rose); }
+.allpost { font-weight: 600; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+@media (max-width: 720px) { .library ul { grid-template-columns: 1fr; } }
+.srcnote { margin-top: 18px; font-size: .78rem; color: var(--muted); }
+
+/* experience */
+.xp { display: grid; gap: 0; border-top: 1px solid var(--ink); }
+.xp-row { display: grid; grid-template-columns: 200px 1fr 1.4fr; gap: 28px; padding-block: 26px; border-bottom: 1px solid var(--line); align-items: baseline; }
+.xp-row .when { font-size: .8rem; color: var(--muted); letter-spacing: .04em; }
+.xp-row h3 { font-size: 1.4rem; }
+.xp-row .r { display: block; font-size: .86rem; color: var(--rose); margin-top: 4px; }
+.xp-row p { color: var(--muted); font-size: .92rem; }
+.skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; }
+.skills span { border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: .82rem; background: var(--bg); }
+
+/* contact */
+.contact { padding-block: 100px; text-align: center; position: relative; overflow: hidden; }
+.contact h2 { font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.05; margin-top: 12px; }
+.contact p { color: var(--muted); margin: 16px auto 0; max-width: 46ch; }
+.contact .cta { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+.contact .mail { margin-top: 22px; font-family: var(--f-head); font-size: 1.25rem; user-select: all; white-space: nowrap; }
+.contact .sprig { width: 110px; margin: 0 auto 10px; display: block; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 26px; font-size: .8rem; color: var(--muted); border-top: 1px solid var(--line); }
+
+@media (max-width: 900px) {
+  .intro .wrap { grid-template-columns: 1fr; gap: 36px; }
+  .portrait { max-width: 220px; }
+  .area-head { grid-template-columns: 1fr; gap: 14px; }
+  .pieces { grid-template-columns: 1fr 1fr; }
+  .spot { grid-template-columns: 1fr; }
+  .xp-row { grid-template-columns: 1fr; gap: 6px; }
+}
+@media (max-width: 560px) {
+  .intro { padding-block: 44px 40px; }
+  .area { padding-block: 64px; }
+  .pieces { grid-template-columns: 1fr; gap: 36px; }
+  .cover { aspect-ratio: 16 / 11; }
+  .cover .view { opacity: 1; transform: none; }
+  .jump ul { gap: 16px 10px; }
+  .jump a { width: 88px; font-size: .78rem; }
+  .jump .ico { width: 62px; height: 62px; }
+  .bar { grid-template-columns: 1fr 44px; gap: 6px 12px; }
+  .bar a { grid-column: 1 / -1; }
+  .spot dl { grid-template-columns: 1fr; gap: 2px; }
+  .spot dd { margin-bottom: 10px; }
+  .stats { grid-template-columns: 1fr 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .cover, .jump .ico { transition: none; } .piece:hover .cover { transform: none; } }
+</style>
+<style>[hidden] { display: none !important; }</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sprig" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M20 112 C40 80 58 52 96 14"/><path d="M38 86 C30 74 32 62 44 56 C50 66 48 78 38 86Z"/><path d="M52 66 C60 56 72 54 80 60 C72 70 62 72 52 66Z"/><path d="M60 54 C54 42 58 30 70 26 C74 38 70 48 60 54Z"/><path d="M76 36 C84 28 96 28 102 34 C94 42 84 42 76 36Z"/><circle cx="96" cy="14" r="4"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="nm" href="#top">Neeshma <span>Mehta</span></a>
+    <a class="btn" href="#contact">Let's talk</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="intro">
+    <div class="wrap">
+      <div class="portrait">
+        <img class="ph" src="neeshma-mehta.jpg" alt="Neeshma Mehta" width="800" height="800" fetchpriority="high">
+        <svg class="sprig" viewBox="0 0 120 120" aria-hidden="true"><use href="#sprig"/></svg>
+      </div>
+      <div>
+        <span class="kicker">Marketing portfolio · 2026</span>
+        <h1>Hello, I'm <em>Neeshma.</em></h1>
+        <p class="role">Product marketer turning complex products into stories people choose.</p>
+        <p class="bio">At Progress Software I ran go-to-market content for DataDirect and Corticon: positioning, whitepapers, customer stories, sales enablement and onboarding. I pair storytelling with analytics, so every piece has a reason and a result.</p>
+        <div class="cta">
+          <a class="btn solid" href="#content">View my work</a>
+          <a class="btn" href="Neeshma_Mehta_Resume.pdf" download data-resume>Download resume</a>
+        </div>
+        <div class="facts"><span><b>Based in</b> Raleigh, NC</span><span><b>Most recently</b> Progress Software</span><span><b>Speaks</b> 4 languages</span></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="jump" aria-label="Jump to a type of work">
+    <div class="wrap">
+      <p>Explore by skill</p>
+      <ul>
+        <li><a href="#onboarding"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-4a2 2 0 0 0-2 2"/><path d="M20 5v13h-6"/></svg></span>Enablement</a></li>
+        <li><a href="#content"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M8 13h8M8 17h6"/></svg></span>Content</a></li>
+        <li><a href="#stories"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg></span>Customer stories</a></li>
+        <li><a href="#analytics"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Analytics</a></li>
+        <li><a href="#experience"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 12h18"/></svg></span>Experience</a></li>
+        <li><a href="#contact"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6 8 7 8-7"/></svg></span>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="area" id="onboarding">
+    <div class="wrap">
+      <div class="area-head">
+        <div><span class="kicker">Sales &amp; product enablement</span><h2>Built from <em>zero.</em></h2></div>
+        <p>When I joined Progress, there was no onboarding material for either product. So I made it, and it became the starting point for new hires and prospects alike.</p>
+      </div>
+      <div class="spot">
+        <div class="l">
+          <span class="kicker">Campaign spotlight</span>
+          <h3>Product onboarding for DataDirect &amp; Corticon</h3>
+          <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#sprig"/></svg>
+        </div>
+        <div class="r">
+          <dl>
+            <dt>Objective</dt><dd>Give new hires and prospective customers one clear place to learn what each product does and why it matters.</dd>
+            <dt>Process</dt><dd>Worked with Product Management and technical teams, then wrote a training guide and two product overview whitepapers.</dd>
+            <dt>Result</dt><dd>Used to onboard new marketing and sales hires, and shared with prospects meeting the products for the first time.</dd>
+          </dl>
+          <div class="stats">
+            <div class="stat"><b>0 → 1</b><span>onboarding guide</span></div>
+            <div class="stat"><b>3</b><span>audiences served</span></div>
+            <div class="stat"><b>2</b><span>overview whitepapers</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pieces">
+        <div class="piece">
+          <a class="cover c-dark" href="https://www.progress.com/resources/papers/what-are-progress-datadirect-connectivity-solutions" target="_blank" rel="noopener"><div class="inner"><span class="type">Whitepaper</span><span class="ttl">What Are DataDirect Connectivity Solutions?</span><span class="brand">Progress DataDirect</span></div><span class="view">View the piece ↗</span></a>
+          <h3>DataDirect overview</h3>
+          <div class="notes"><span><b>Objective:</b> explain connectivity to non-specialists.</span><span><b>Used for:</b> onboarding, sales, prospects.</span></div>
+        </div>
+        <div class="piece">
+          <a class="cover c-blush" href="https://www.progress.com/resources/papers/what-is-the-progress-corticon-platform" target="_blank" rel="noopener"><div class="inner"><span class="type">Whitepaper</span><span class="ttl">What Is the Progress Corticon Platform?</span><span class="brand">Progress Corticon</span></div><svg class="deco sprig" viewBox="0 0 120 120" aria-hidden="true"><use href="#sprig"/></svg><span class="view">View the piece ↗</span></a>
+          <h3>Corticon overview</h3>
+          <div class="notes"><span><b>Objective:</b> make a rules engine easy to grasp.</span><span><b>Used for:</b> onboarding, sales, prospects.</span></div>
+        </div>
+        <div class="piece">
+          <div class="cover c-line"><div class="inner"><span class="type">Sales kit</span><span class="ttl">Battlecards, datasheets, solution briefs &amp; pitch decks</span><span class="brand">Internal · samples on request</span></div></div>
+          <h3>Sales &amp; partner enablement</h3>
+          <div class="notes"><span><b>Objective:</b> help sales handle objections and win.</span><span><b>Audience:</b> sales teams and channel partners.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area" id="content">
+    <div class="wrap">
+      <div class="area-head">
+        <div><span class="kicker">Content &amp; positioning</span><h2>Stories that <em>sell the idea.</em></h2></div>
+        <p>Positioning-led content for two very different buyers: data teams who care about connectivity, and business leaders who care about control.</p>
+      </div>
+      <div class="pieces">
+        <div class="piece">
+          <a class="cover c-sand" href="https://www.progress.com/blogs/what-is-progress-datadirect-simplifying-data-connectivity-across-modern-enterprises" target="_blank" rel="noopener"><div class="inner"><span class="type">Product explainer</span><span class="ttl">What Is Progress DataDirect?</span><span class="brand">Most-read piece · 165 views</span></div><span class="view">View the piece ↗</span></a>
+          <h3>Making the invisible valuable</h3>
+          <div class="notes"><span><b>Objective:</b> show why connectivity deserves budget.</span><span><b>Result:</b> <span class="num">263</span> views across the DataDirect series.</span></div>
+        </div>
+        <div class="piece">
+          <a class="cover c-dark" href="https://www.progress.com/blogs/why-ai-automation-needs-a-decision-layer" target="_blank" rel="noopener"><div class="inner"><span class="type">Thought leadership</span><span class="ttl">Why AI Automation Needs a Decision Layer</span><span class="brand">Progress Corticon</span></div><span class="view">View the piece ↗</span></a>
+          <h3>A rules engine for the AI era</h3>
+          <div class="notes"><span><b>Objective:</b> AI brings insight, rules bring control.</span><span><b>Result:</b> <span class="num">134</span> views on the decision-layer posts.</span></div>
+        </div>
+        <div class="piece">
+          <a class="cover c-blush" href="https://www.progress.com/blogs/what-is-low-code-workflow-automation-a-practical-guide-for-modern-businesses" target="_blank" rel="noopener"><div class="inner"><span class="type">Editorial series · 3 parts</span><span class="ttl">Low-Code Workflow Automation, from basics to AI</span><span class="brand">Progress Corticon</span></div><svg class="deco sprig" viewBox="0 0 120 120" aria-hidden="true"><use href="#sprig"/></svg><span class="view">View the piece ↗</span></a>
+          <h3>A series in three chapters</h3>
+          <div class="notes"><span><b>Objective:</b> reach buyers early in their research.</span><span><b>Result:</b> <span class="num">68</span> views across the three parts.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area" id="stories">
+    <div class="wrap">
+      <div class="area-head">
+        <div><span class="kicker">Customer marketing</span><h2>Letting customers <em>make the case.</em></h2></div>
+        <p>Each story is built around one moment a reader can picture: scale for a nonprofit, speed for a software company, simplicity for a partner.</p>
+      </div>
+      <div class="pieces">
+        <div class="piece">
+          <a class="cover c-dark" href="https://www.progress.com/blogs/how-global-refuge-uses-data-integration-to-support-refugee-resettlement-at-scale" target="_blank" rel="noopener"><div class="inner"><span class="type">Customer story</span><span class="ttl">How Global Refuge uses data integration at scale</span><span class="brand">80 views</span></div><span class="view">View the piece ↗</span></a>
+          <h3>Global Refuge</h3>
+          <div class="notes"><span><b>Angle:</b> scale for refugee-resettlement work.</span></div>
+        </div>
+        <div class="piece">
+          <a class="cover c-sand" href="https://www.progress.com/blogs/why-performance-was-the-make-or-break-factor-for-virtualz" target="_blank" rel="noopener"><div class="inner"><span class="type">Customer story</span><span class="ttl">Why performance was the make-or-break factor</span><span class="brand">VirtualZ</span></div><span class="view">View the piece ↗</span></a>
+          <h3>VirtualZ</h3>
+          <div class="notes"><span><b>Angle:</b> mainframe data to cloud and AI, without bottlenecks.</span></div>
+        </div>
+        <div class="piece">
+          <a class="cover c-blush" href="https://www.progress.com/blogs/a-journey-to-high-performance-multi-database-connectivity" target="_blank" rel="noopener"><div class="inner"><span class="type">Partner webinar</span><span class="ttl">A journey to high-performance multi-database connectivity</span><span class="brand">WinSQL × DataDirect</span></div><svg class="deco sprig" viewBox="0 0 120 120" aria-hidden="true"><use href="#sprig"/></svg><span class="view">View the piece ↗</span></a>
+          <h3>WinSQL webinar</h3>
+          <div class="notes"><span><b>Angle:</b> simplicity for multi-database teams.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area" id="analytics">
+    <div class="wrap">
+      <div class="area-head">
+        <div><span class="kicker">Analytics &amp; results</span><h2>What <em>readers chose.</em></h2></div>
+        <p>I track what lands. Here is every article I published on the Progress blog, by views. Click a title to read it.</p>
+      </div>
+      <div class="bignums">
+        <div><b>581</b><span>page views in 90 days</span></div>
+        <div><b>276</b><span>readers reached</span></div>
+        <div><b>12</b><span>articles published</span></div>
+        <div><b>4</b><span>whitepapers</span></div>
+      </div>
+      <div class="chart" id="chart"></div>
+      <p class="srcnote">Source: Google Analytics 4, Aug 27 to Nov 24, 2026. Articles published before Aug 27 only count views from that window.</p>
+      <div class="library">
+        <span class="kicker">All 4 whitepapers</span>
+        <ul>
+          <li><a href="https://www.progress.com/resources/papers/what-are-progress-datadirect-connectivity-solutions" target="_blank" rel="noopener">What Are Progress DataDirect Connectivity Solutions? ↗</a></li>
+          <li><a href="https://www.progress.com/resources/papers/the-hidden-cost-of-poor-data-access-layers" target="_blank" rel="noopener">The Hidden Cost of Poor Data Access Layers ↗</a></li>
+          <li><a href="https://www.progress.com/resources/papers/what-is-the-progress-corticon-platform" target="_blank" rel="noopener">What Is the Progress Corticon Platform? ↗</a></li>
+          <li><a href="https://www.progress.com/resources/papers/rule-authoring-with-the-corticon-ai-assistant" target="_blank" rel="noopener">Rule Authoring with the Corticon AI Assistant ↗</a></li>
+        </ul>
+        <a class="allpost" href="https://www.progress.com/blogs/author/neeshma-mehta" target="_blank" rel="noopener">All 12 articles on progress.com ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="area" id="experience">
+    <div class="wrap">
+      <div class="area-head">
+        <div><span class="kicker">Experience</span><h2>The <em>path</em> so far.</h2></div>
+        <p>Logistics in Auckland, analytics in North Carolina, then product marketing. B.S. Information Systems, Minor in Marketing &amp; Data Analytics, Auckland University of Technology, 2025.</p>
+      </div>
+      <div class="xp">
+        <div class="xp-row"><span class="when">Apr 2026 – Nov 2026</span><div><h3>Progress Software</h3><span class="r">Product Marketing Specialist</span></div><p>GTM and integrated campaigns for DataDirect and Corticon: launches, enablement, content, webinars and partner marketing.</p></div>
+        <div class="xp-row"><span class="when">Apr 2024 – Sep 2025</span><div><h3>Humanetics</h3><span class="r">AI &amp; Data Analytics Intern</span></div><p>SQL and Excel dashboards on campaign and product performance, ROI and adoption, turned into recommendations for leadership.</p></div>
+        <div class="xp-row"><span class="when">Jul 2023 – Sep 2024</span><div><h3>Bluebird Foods</h3><span class="r">Logistics Coordinator Associate</span></div><p>Inventory and fulfilment in Auckland with 98% order accuracy and lean process improvements.</p></div>
+      </div>
+      <div class="skills">
+        <span>Positioning &amp; messaging</span><span>Product launches</span><span>Sales enablement</span><span>Customer stories</span><span>Webinars</span><span>Email nurture</span><span>Competitive analysis</span><span>HubSpot</span><span>Google Analytics</span><span>Mixpanel</span><span>Webflow</span><span>SQL</span><span>Python</span><span>Tableau</span><span>Power BI</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <svg class="sprig" viewBox="0 0 120 120" aria-hidden="true"><use href="#sprig"/></svg>
+      <span class="kicker">Contact</span>
+      <h2>Let's work <em>together.</em></h2>
+      <p>I'm open to product marketing roles. Email or LinkedIn is the fastest way to reach me.</p>
+      <div class="cta">
+        <button type="button" class="btn solid" id="copy">Copy email</button>
+        <a class="btn" href="https://www.linkedin.com/in/neeshma-mehta/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="Neeshma_Mehta_Resume.pdf" download data-resume>Resume ↓</a>
+      </div>
+      <div class="mail" id="mail">neeshmamehta@gmail.com</div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Neeshma Mehta · Raleigh, NC</span><a href="#top">Back to top ↑</a></div></footer>
+
+<script>
+(() => {
+  const DATA = [
+    ["What Is Progress DataDirect?", "what-is-progress-datadirect-simplifying-data-connectivity-across-modern-enterprises", 165],
+    ["Bring Greater Control to Complex Business Decisions", "bring-greater-control-to-complex-business-decisions", 80],
+    ["How Global Refuge Uses Data Integration", "how-global-refuge-uses-data-integration-to-support-refugee-resettlement-at-scale", 80],
+    ["ETL Is Only as Good as Its Connectivity", "etl-is-only-as-good-as-the-data-connectivity-behind-it", 68],
+    ["Why AI Needs Rules", "why-ai-needs-rules-the-critical-role-of-corticon-in-responsible-ai", 37],
+    ["The Hidden Cost of Your Data Access Layer", "the-hidden-cost-of-your-data-access-layer", 30],
+    ["A Journey to Multi-Database Connectivity", "a-journey-to-high-performance-multi-database-connectivity", 30],
+    ["Low-Code Workflow Automation, Part 1", "what-is-low-code-workflow-automation-a-practical-guide-for-modern-businesses", 27],
+    ["Low-Code Workflow Automation, Part 2", "low-code-workflow-automation-use-cases-from-employee-onboarding-to-enterprise-integration", 21],
+    ["AI Workflow Orchestration, Part 3", "part-3-ai-workflow-orchestration-balancing-automation-governance-and-human-oversight", 20],
+    ["Why AI Automation Needs a Decision Layer", "why-ai-automation-needs-a-decision-layer", 17],
+    ["Why Performance Mattered for VirtualZ", "why-performance-was-the-make-or-break-factor-for-virtualz", 6]
+  ];
+  const max = DATA[0][2], chart = document.getElementById("chart");
+  DATA.forEach(([t, slug, v]) => {
+    const row = document.createElement("div"); row.className = "bar";
+    row.innerHTML = `<a href="https://www.progress.com/blogs/${slug}" target="_blank" rel="noopener"></a><div class="track"><div class="fill" style="--w:${(v / max * 100).toFixed(1)}%"></div></div><b>${v}</b>`;
+    row.querySelector("a").textContent = t; chart.appendChild(row);
+  });
+  const copy = document.getElementById("copy");
+  copy.addEventListener("click", () => {
+    const txt = document.getElementById("mail").textContent;
+    const ok = () => { copy.textContent = "Copied!"; setTimeout(() => copy.textContent = "Copy email", 1800); };
+    const fb = () => { getSelection().selectAllChildren(document.getElementById("mail")); copy.textContent = "Selected, press Ctrl+C"; };
+    try { navigator.clipboard.writeText(txt).then(ok, fb); } catch (e) { fb(); }
+  });
+
+  // In-page links (skill buttons, "View my work", "Let's talk", "Back to top") glide to their
+  // section instead of jumping. People who ask their device for reduced motion still jump.
+  const calm = matchMedia("(prefers-reduced-motion: reduce)");
+  document.addEventListener("click", e => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const id = a.getAttribute("href").slice(1);
+    const target = id === "top" ? document.documentElement : (id && document.getElementById(id));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: calm.matches ? "auto" : "smooth", block: "start" });
+    if (target !== document.documentElement) { target.setAttribute("tabindex", "-1"); target.focus({ preventScroll: true }); }
+  });
+
+  // Resume buttons. On a normal website the link downloads the PDF by itself. Inside the
+  // Claude preview a page can't start downloads, so the PDF goes to the preview's save prompt.
+  const resumeLinks = document.querySelectorAll("a[data-resume]");
+  if (resumeLinks.length && window.claude && typeof window.claude.use === "function") {
+    let saver = null, pdf = null;
+    window.claude.use("downloads").then(ns => {
+      if (!ns) return;
+      return fetch(resumeLinks[0].getAttribute("href"))
+        .then(r => (r.ok ? r.blob() : null))
+        .then(b => { if (b && b.size) { pdf = b; saver = ns; } });
+    }).catch(() => {});
+    resumeLinks.forEach(a => a.addEventListener("click", e => {
+      if (!saver || !pdf) return;          // not in the preview: let the link work normally
+      e.preventDefault();
+      saver.save({ filename: "Neeshma_Mehta_Resume.pdf", data: pdf }).catch(() => {});
+    }));
+  }
+})();
+</script>
+
+</body>
+</html>
